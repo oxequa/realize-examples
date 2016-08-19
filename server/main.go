@@ -11,7 +11,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	fmt.Println("Watch on 0.0.0.0:5000")
+	fmt.Println("Server listening on port 0.0.0.0:5000")
 	http.HandleFunc("/", hello)
 	http.ListenAndServe("0.0.0.0:5000", nil)
 }

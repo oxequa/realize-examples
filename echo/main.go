@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Watch on 0.0.0.0:3000")
+	fmt.Println("Server listening on 0.0.0.0:3000")
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
 		return c.String(http.StatusOK, "Hello, World, Echo Framework!")
