@@ -26,3 +26,5 @@ _testmain.go
 .glide
 .idea
 .DS_Store
+
+vendor
