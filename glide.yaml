@@ -1,0 +1,5 @@
+package: github.com/tockins/realize-examples
+import:
+- package: github.com/labstack/echo
+  subpackages:
+  - engine/standard
