@@ -36,15 +36,3 @@ projects:
     - bin
     exts:
     - .go
-- app_name: Sample App
-  app_path: /
-  app_run: true
-  app_bin: true
-  app_watcher:
-    paths:
-    - /
-    ignore_paths:
-    - vendor
-    - bin
-    exts:
-    - .go
