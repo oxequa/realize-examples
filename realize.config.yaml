@@ -2,7 +2,6 @@ version: v1.0
 projects:
 - app_name: Printer
   app_path: print
-  app_main: main.go
   app_run: true
   app_bin: true
   app_watcher:
@@ -15,7 +14,6 @@ projects:
     - .go
 - app_name: Server
   app_path: server
-  app_main: main.go
   app_run: true
   app_bin: true
   app_watcher:
@@ -28,7 +26,18 @@ projects:
     - .go
 - app_name: Echo Framework
   app_path: echo
-  app_main: main.go
+  app_run: true
+  app_bin: true
+  app_watcher:
+    paths:
+    - /
+    ignore_paths:
+    - vendor
+    - bin
+    exts:
+    - .go
+- app_name: Sample App
+  app_path: /
   app_run: true
   app_bin: true
   app_watcher:
