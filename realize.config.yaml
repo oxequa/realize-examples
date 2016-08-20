@@ -1,9 +1,10 @@
 version: v1.0
 projects:
 - app_name: Printer
-  app_path: print
+  app_path: print/printer
   app_run: true
   app_bin: true
+  app_build: true
   app_watcher:
     paths:
     - /
