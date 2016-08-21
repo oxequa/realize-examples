@@ -1,10 +1,9 @@
 version: v1.0
 projects:
-- app_name: Printer
-  app_path: print/printer
+- app_name: coin
+  app_path: coin
   app_run: true
   app_bin: true
-  app_build: true
   app_watcher:
     paths:
     - /
@@ -13,7 +12,19 @@ projects:
     - bin
     exts:
     - .go
-- app_name: Server
+- app_name: print
+  app_path: print/printer
+  app_run: true
+  app_bin: true
+  app_watcher:
+    paths:
+    - /
+    ignore_paths:
+    - vendor
+    - bin
+    exts:
+    - .go
+- app_name: server
   app_path: server
   app_run: true
   app_bin: true
@@ -25,7 +36,7 @@ projects:
     - bin
     exts:
     - .go
-- app_name: Echo Framework
+- app_name: echo
   app_path: echo
   app_run: true
   app_bin: true
