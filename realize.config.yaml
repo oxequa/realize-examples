@@ -1,9 +1,10 @@
 version: v1.0
 projects:
-- app_name: coin
-  app_path: coin
+- app_name: print
+  app_path: print/printer
   app_run: true
   app_bin: true
+  app_fmt: true
   app_watcher:
     paths:
     - /
@@ -12,10 +13,11 @@ projects:
     - bin
     exts:
     - .go
-- app_name: print
-  app_path: print/printer
+- app_name: coin
+  app_path: coin
   app_run: true
   app_bin: true
+  app_fmt: true
   app_watcher:
     paths:
     - /
@@ -28,6 +30,7 @@ projects:
   app_path: server
   app_run: true
   app_bin: true
+  app_fmt: true
   app_watcher:
     paths:
     - /
@@ -40,6 +43,7 @@ projects:
   app_path: echo
   app_run: true
   app_bin: true
+  app_fmt: true
   app_watcher:
     paths:
     - /
