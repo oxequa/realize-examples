@@ -5,10 +5,10 @@ import (
 	"time"
 )
 
-func main(){
+func main() {
 	fmt.Println("Start")
 	for i := 0; i < 3; i++ {
-		fmt.Println("Tick",i)
+		fmt.Println("Tick", i)
 		time.Sleep(2 * time.Second)
 	}
 	fmt.Println("End")

@@ -1,10 +1,10 @@
 package main
 
 import (
-	"net/http"
+	"fmt"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/engine/standard"
-	"fmt"
+	"net/http"
 )
 
 func main() {
@@ -14,7 +14,7 @@ func main() {
 		return c.String(http.StatusOK, "Hello, World, Echo Framework!")
 	})
 	e.Run(standard.New("0.0.0.0:3000"))
-	for{
+	for {
 		fmt.Println("test")
 	}
 }
