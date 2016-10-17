@@ -13,8 +13,5 @@ func main() {
 	e.GET("/", func(c echo.Context) error {
 		return c.String(http.StatusOK, "Hello, World, Echo Framework!")
 	})
-	e.Run(standard.New("0.0.0.0:3000"))
-	for {
-		fmt.Println("test")
-	}
+	go e.Run(standard.New("0.0.0.0:3000"))
 }

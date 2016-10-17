@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 	"strings"
-	"log"
 )
 
 func sayhelloName(w http.ResponseWriter, r *http.Request) {
-	r.ParseForm()  // parse arguments, you have to call this by yourself
-	fmt.Println(r.Form)  // print form information in server side
+	r.ParseForm()       // parse arguments, you have to call this by yourself
+	fmt.Println(r.Form) // print form information in server side
 	fmt.Println("path", r.URL.Path)
 	fmt.Println("scheme", r.URL.Scheme)
 	fmt.Println(r.Form["url_long"])
@@ -22,7 +22,7 @@ func sayhelloName(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	fmt.Println("Server listening on 0.0.0.0:9090")
-	http.HandleFunc("/", sayhelloName) // set router
+	http.HandleFunc("/", sayhelloName)              // set router
 	err := http.ListenAndServe("0.0.0.0:9090", nil) // set listen port
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
