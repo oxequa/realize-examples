@@ -1,0 +1,35 @@
+settings:
+  resources:
+    output: outputs.log
+    log: logs.log
+  server:
+    enable: true
+    open: false
+    host: localhost
+    port: 5000
+projects:
+- name: printer
+  path: /
+  run: true
+  bin: true
+  generate: false
+  build: true
+  fmt: true
+  test: false
+  params: []
+  watcher:
+    before: []
+    after: []
+    paths:
+    - /
+    ignore_paths:
+    - vendor
+    exts:
+    - .go
+    preview: true
+  cli:
+    streams: true
+  file:
+    streams: false
+    logs: false
+    errors: false

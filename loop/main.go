@@ -13,7 +13,9 @@ func main() {
 		for i := 0; i < 768; i++ {
 		}
 	}
+	fmt.Println("You lose on")
 	time.Now().After(t)
+
 	fmt.Println(time.Now())
 	fmt.Println(time.Since(t))
 }
