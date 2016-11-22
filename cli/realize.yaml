@@ -20,6 +20,7 @@ projects:
   test: false
   params:
   - --lang=spanish
+  - name.something
   watcher:
     before: []
     after: []
