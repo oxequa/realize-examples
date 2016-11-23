@@ -4,7 +4,7 @@ Install Realize:
 
     $ go get github.com/tockins/realize
 
-From this directory:
+From each directory:
  
     $ realize run 
 
@@ -14,3 +14,7 @@ Examples List:
 - Server: Starts a web server with "net/http" on 0.0.0.0:5000
 - Echo: Starts a web server with "Echo Framework" on 0.0.0.0:3000
 - Coin: Flip a coin n times 
+- Interface: 
+- Loop:
+- Cli:
+- Args: 
