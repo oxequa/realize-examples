@@ -39,17 +39,4 @@ func main() {
 	})
 
 	fmt.Println(a.Q1)
-
-	//intr, _ := i.Run(&i.Quest{
-	//	Q: &i.Q{
-	//		Text:  "Would you like some coffee? "+g("[yes/no]"),
-	//		Err: b("INVALID"),
-	//		Response: bool(false),
-	//		Default: i.D{Text:y("(yes)"),Value:bool(true)},
-	//	},
-	//})
-	//
-	//for _, n := range intr.Questions {
-	//	fmt.Println(n.Response)
-	//}
 }
