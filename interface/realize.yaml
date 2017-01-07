@@ -7,19 +7,20 @@ settings:
     open: false
     host: localhost
     port: 5000
+  config:
+    flimit: 0
 projects:
-- name: coin
-  path: /
+- name: test
+  path: .
   run: true
   bin: true
   generate: false
-  build: true
+  build: false
   fmt: true
   test: false
   params: []
   watcher:
-    before:
-    - mkdir test
+    before: []
     after: []
     paths:
     - /

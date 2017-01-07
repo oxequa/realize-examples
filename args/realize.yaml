@@ -7,6 +7,8 @@ settings:
     open: false
     host: localhost
     port: 5000
+  config:
+    flimit: 0
 projects:
 - name: args
   path: /
@@ -19,6 +21,7 @@ projects:
   params:
   - arg test 1
   - arg test 2
+  - --test test
   watcher:
     before: []
     after: []
