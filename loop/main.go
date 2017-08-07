@@ -9,8 +9,8 @@ func main() {
 
 	t := time.Now()
 	fmt.Println(t)
-	for i := 0; i < 1280; i++ {
-		for i := 0; i < 768; i++ {
+	for i := 0; i < 10; i++ {
+		for i := 0; i < 10; i++ {
 		}
 	}
 	fmt.Println("You lose on")
