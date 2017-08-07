@@ -1,0 +1,36 @@
+settings:
+  resources:
+    outputs: outputs.log
+    logs: logs.log
+    errors: errors.log
+  server:
+    status: false
+    open: false
+    host: localhost
+    port: 5001
+projects:
+- name: env
+  path: .
+  environment:
+    var1: test1
+    var2: test2
+    var3: test3
+    var4: test4
+  commands:
+    vet: false
+    fmt: true
+    test: false
+    generate: false
+    bin:
+      status: true
+    build:
+      status: false
+    run: true
+  watcher:
+    preview: false
+    paths:
+    - /
+    ignore_paths:
+    - vendor
+    exts:
+    - .go
