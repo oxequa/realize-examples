@@ -1,36 +1,38 @@
 settings:
-  resources:
-    outputs: outputs.log
-    logs: logs.log
-    errors: errors.log
-  server:
-    status: false
-    open: false
-    host: localhost
-    port: 5001
-projects:
+  files:
+    outputs:
+      status: false
+      name: outputs.log
+    logs:
+      status: false
+      name: logs.log
+    errors:
+      status: false
+      name: errors.log
+  legacy:
+    force: false
+    interval: 100ms
+server:
+  status: false
+  open: false
+  host: localhost
+  port: 5001
+schema:
 - name: env
   path: .
   environment:
     var1: test1
     var2: test2
-    var3: test3
-    var4: test4
   commands:
-    vet: false
-    fmt: true
-    test: false
-    generate: false
-    bin:
+    fmt:
       status: true
-    build:
-      status: false
+    install:
+      status: true
     run: true
   watcher:
-    preview: false
     paths:
     - /
-    ignore_paths:
+    extensions:
+    - go
+    ignored_paths:
     - vendor
-    exts:
-    - .go

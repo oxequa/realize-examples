@@ -1,35 +1,29 @@
 settings:
-  resources:
-    outputs: outputs.log
-    logs: logs.log
-    errors: errors.log
-  server:
-    status: false
-    open: false
-    host: localhost
-    port: 5001
-projects:
+  legacy:
+    force: false
+    interval: 100ms
+server:
+  status: false
+  open: false
+  host: localhost
+  port: 5001
+schema:
 - name: args
-  path: /Users/alessio/go/src/github.com/tockins/realize-examples/args
+  path: .
   commands:
-    vet: true
-    fmt: true
-    test: false
-    generate: false
-    bin:
+    install:
       status: true
-    build:
-      status: false
     run: true
   args:
-  - test
-  - example
-  - argument
+  - --string="val one"
+  - --string1='val two'
+  - -string2=val three
+  - --bool
+  - --int=3
   watcher:
-    preview: false
     paths:
     - /
-    ignore_paths:
+    extensions:
+    - go
+    ignored_paths:
     - vendor
-    exts:
-    - .go
