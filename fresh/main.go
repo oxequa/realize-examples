@@ -16,9 +16,9 @@ func main() {
 	f.Config().SetPort(8080)
 	// group
 	g := f.Group("/group/").Before(filter1, filter1).After(filter1, filter1)
-	g.Get("/test/", list).Before(filter2, filter3).After(filter2)
-	g.Get("test/{id}", single)
-	g.Get("test/alpha", single)
+	g.GET("/test/", list).Before(filter2, filter3).After(filter2)
+	g.GET("test/{id}", single)
+	g.GET("test/alpha", single)
 	f.Run()
 }
 
