@@ -1,27 +1,30 @@
 settings:
   legacy:
     force: false
-    interval: 100ms
+    interval: 0s
 server:
   status: false
   open: false
+  port: 5002
   host: localhost
-  port: 5001
 schema:
-- name: loop
+- name: multiple
   path: .
   commands:
     fmt:
       status: true
-    test:
+    build:
       status: true
-    install:
+      dir: cmd
+    run:
       status: true
-    run: true
+      dir: cmd
   watcher:
     paths:
     - /
     extensions:
     - go
     ignored_paths:
+    - .git
+    - .realize
     - vendor
