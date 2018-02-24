@@ -9,7 +9,7 @@ server:
   port: 5001
 schema:
 - name: coin1
-  path: /Users/alessiopracchia/go/src/github.com/tockins/realize-examples/coin
+  path: /Users/alessiopracchia/go/src/github.com/oxequa/realize-examples/coin
   commands:
     run: true
   watcher:
@@ -22,7 +22,7 @@ schema:
     - .realize
     - vendor
 - name: env
-  path: /Users/alessiopracchia/go/src/github.com/tockins/realize-examples/env
+  path: /Users/alessiopracchia/go/src/github.com/oxequa/realize-examples/env
   commands:
     run: true
   watcher:
@@ -35,7 +35,7 @@ schema:
     - .realize
     - vendor
 - name: coin
-  path: /Users/alessiopracchia/go/src/github.com/tockins/realize-examples/coin
+  path: /Users/alessiopracchia/go/src/github.com/oxequa/realize-examples/coin
   commands:
     run: true
   watcher:

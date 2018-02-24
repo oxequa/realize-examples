@@ -4,7 +4,7 @@ package main
 
 import (
 	"fmt"
-	s "github.com/tockins/realize-examples/interface/sub"
+	s "github.com/oxequa/realize-examples/interface/sub"
 )
 
 // Speaker types can say things.

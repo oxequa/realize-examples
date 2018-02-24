@@ -1,4 +1,4 @@
-package: github.com/tockins/realize-examples
+package: github.com/oxequa/realize-examples
 import:
 - package: github.com/labstack/echo
   subpackages:

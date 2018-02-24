@@ -4,11 +4,11 @@
 
 Install Realize:
 
-    $ go get github.com/tockins/realize
+    $ go get github.com/oxequa/realize
 
 From each directory:
- 
-    $ realize run 
+
+    $ realize run
 
 Examples List:
 

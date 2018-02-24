@@ -2,7 +2,7 @@ package main
 
 import (
 	"errors"
-	"github.com/tockins/fresh"
+	"github.com/oxequa/fresh"
 	"net/http"
 	"os"
 )
