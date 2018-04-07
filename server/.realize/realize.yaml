@@ -13,7 +13,8 @@ schema:
   commands:
     install:
       status: true
-    run: true
+    run:
+      status: true
   watcher:
     paths:
     - /
