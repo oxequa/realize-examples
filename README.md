@@ -8,7 +8,7 @@ Install Realize:
 
 From each directory:
 
-    $ realize run
+    $ realize start
 
 Examples List:
 
